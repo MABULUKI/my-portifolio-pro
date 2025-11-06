@@ -1,17 +1,20 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "lib": ["dom", "esnext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
     "baseUrl": ".",
     "paths": {
       "@convex/*": ["convex/_generated/*"]
     },
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node",   // lowercase
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
+    "noEmit": true,       // prevent .js output
+    "allowJs": false      // don’t allow JS files in src
   },
-  "include": ["src"]
+  "include": ["src", "convex/_generated"]   // include generated files so TS can find them
 }
