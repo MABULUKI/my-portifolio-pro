@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+/* Optional global body styles */
+body {
+font-family: 'Inter', sans-serif; 
+background-color: #F5F5F5;
+color: #212121;
+font-size: 16px;
+line-height: 1.5;
+}
+
+/* Headings */
+h1 {
+  @apply text-3xl font-bold; /* 60px */
+}
+
+h2 {
+  @apply text-2xl font-semibold; /* 48px */
+}
+
+h3 {
+  @apply text-xl font-semibold; /* 36px */
+}
+
+h4 {
+  @apply text-lg font-medium; /* 30px */
+}
+
+h5 {
+  @apply text-sm font-medium; /* 24px */
+}
+
+h6 {
+  @apply text-xs font-medium; /* 20px */
+}
+
+/* Paragraphs */
+p {
+  @apply text-base; /* 16px */
+}
+
+/* Small text */
+small {
+  @apply text-xs; /* 14px */
+}
+
+/* Optional: responsive adjustments */
+/* @media (min-width: 768px) {
+  h1 { @apply text-7xl; } 
+  h2 { @apply text-6xl; }
+  h3 { @apply text-5xl; }
+  p  { @apply text-lg; }
+} */
