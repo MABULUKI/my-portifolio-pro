@@ -66,6 +66,7 @@ const DashboardOverview = () => {
           {stats.map((stat, idx) => (
             <div
               key={idx}
+              dir="ltr"
               className={`p-4 sm:p-6 rounded-2xl shadow-xl transform transition-all duration-700 hover:scale-105 hover:shadow-2xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} ${stat.color} text-white`}
               style={{ transitionDelay: `${idx * 150}ms` }}
             >
@@ -78,7 +79,7 @@ const DashboardOverview = () => {
         {/* Quick Insights */}
         <div className={`mt-8 sm:mt-12 bg-white rounded-md shadow-sm p-4 sm:p-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">Quick Insights</h3>
-          <ul className="list-disc list-inside text-gray-700 space-y-1 sm:space-y-2 text-xs sm:text-sm">
+          <ul className="list-disc marker:text-blue-500 marker:text-xl list-inside text-gray-700 space-y-1 sm:space-y-2 text-xs sm:text-sm">
             <li>Most recent project: {projects[0]?.title || "N/A"}</li>
             <li>Latest blog post: {blogs[0]?.title || "N/A"}</li>
             <li>Total images: {images.length}</li>

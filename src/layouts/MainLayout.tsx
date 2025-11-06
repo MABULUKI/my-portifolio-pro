@@ -59,7 +59,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
 
       {/* Hero Section */}
       <div
-        className="relative w-screen max-w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] bg-cover bg-center transition-all duration-1000 ease-in-out"
+        className="relative w-screen saturate-200 max-w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] bg-cover bg-center transition-all duration-1000 ease-in-out"
         style={{ backgroundImage: `url('${heroImages[currentIndex]}')` }}
       >
         <div className="absolute inset-0 bg-black/30 dark:bg-black/50 flex items-center justify-center px-4 text-center">

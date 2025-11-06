@@ -16,10 +16,12 @@ h1 {
 
 h2 {
   @apply text-2xl font-semibold; /* 48px */
+  @apply text-shadow-lg/30;
 }
 
 h3 {
   @apply text-xl font-semibold; /* 36px */
+  @apply text-shadow-md
 }
 
 h4 {

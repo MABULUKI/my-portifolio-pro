@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrolledPastHero }) => {
       <div className="max-w-5xl mx-auto flex justify-between items-center">
         {/* Logo / Brand */}
         <div className={`flex items-center justify-center transition-colors duration-500 ${textColor}`}>
-          <GiMineralHeart className={`w-12 h-12 drop-shadow-lg ${textColor}`} />
+          <GiMineralHeart className={`w-12 h-12 drop-shadow-lg animate-pulse ${textColor}`} />
         </div>
 
         {/* Desktop Menu */}

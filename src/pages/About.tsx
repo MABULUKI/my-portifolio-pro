@@ -94,7 +94,7 @@ const About = () => {
                                 <img
                                     src={profile_picture}
                                     alt="profile image"
-                                    className="w-full h-64 object-cover"
+                                    className="w-full h-64 object-cover saturate-150"
                                 />
                             </div>
                             <div className="p-6">
